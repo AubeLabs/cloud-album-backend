@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  cloud-album-backend:
+    build: .
+    ports:
+      - "3001:3001"
+    env_file: .env
+    restart: always
